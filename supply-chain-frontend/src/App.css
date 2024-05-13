@@ -1,0 +1,274 @@
+.App {
+  text-align: center;
+ /* background-image: url('./images/background.jpeg');*/
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.App-logo {
+  height: 40vmin;  /* 可以根据需要调整 */
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: transparent;
+ /* background-color: #282c34;*/
+  min-height:80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 导航部分的样式，包括左右分布 */
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;  /* 根据屏幕大小适当调整 */
+  margin: 20px auto;
+}
+
+.nav-links div {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {  /* 链接按钮的样式 */
+  text-decoration: none;
+  color: white;
+  background-color: #282c34;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #4CAF50;
+}
+
+/* 增加 select 元素的样式 */
+select {
+  width: 50%;           /* 增加选择框的宽度 */
+  padding: 10px 15px;   /* 增加内边距，让选择框更高，更易于点击 */
+  margin-top: 20px;     /* 在选择框上方增加一些间隔 */
+  font-size: 1.2em;     /* 增加字体大小，让选项更容易阅读 */
+  cursor: pointer;      /* 将光标变为指针，表明这是一个可以交互的元素 */
+  border-radius: 5px;   /* 圆角边框，美化样式 */
+  border: 1px solid #ccc; /* 边框颜色较浅，更加美观 */
+  background-color: #fff; /* 背景颜色设置为白色，增加对比度 */
+}
+
+/* 增加 select 元素的聚焦样式，改善用户体验 */
+select:focus {
+  border-color: #4CAF50; /* 聚焦时边框颜色更鲜明 */
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.6); /* 轻微的阴影效果，突出显示 */
+}
+
+.route-component {
+  min-height:100vh;
+  width:100%;
+  padding:20px;
+  box-sizing:border-box;
+}
+
+/* 增加 AccountSelector 标签的样式 */
+.AccountSelector-label {
+  font-size: 1.5em;    /* 增大字体大小 */
+  color: #ffffff;     /* 设置字体颜色为白色，依据背景色调整 */
+  background-color: rgba(40, 44, 52, 0.8); /* 添加半透明的暗色背景 */
+  padding: 5px 10px;  /* 增加内边距 */
+  border-radius: 5px; /* 添加圆角 */
+}
+
+/* 创建产品表单的样式 */
+.create-product-form {
+  background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.create-product-form h2 {
+  color: #333;
+}
+
+.create-product-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.create-product-form input,
+.create-product-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* 确保宽度包含padding和border */
+}
+
+.create-product-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  font-size:1.5em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition:background-color 0.3s;
+}
+
+.create-product-form button:hover {
+  background-color: #45a049;
+}
+
+.purchase-form {
+  background-color: rgba(255, 255, 255, 0.8); /* 浅色背景增加透明度 */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* 添加阴影增加立体感 */
+  width: auto; /* 或者指定宽度，如 50% */
+  margin: 20px auto; /* 居中显示 */
+  color: #333; /* 深色文字增加可读性 */
+}
+
+.purchase-form input,
+.purchase-form button {
+  width: 100%; /* 充满容器宽度 */
+  padding: 12px; /* 增大内边距 */
+  margin-top: 10px; /* 增大元素间距 */
+  border: 1px solid #ccc; /* 细边框 */
+  border-radius: 5px; /* 圆角边框 */
+}
+
+.purchase-form button {
+  background-color: #4CAF50; /* 绿色按钮 */
+  color: white; /* 白色文字 */
+  font-size: 1.2em; /* 大号字体 */
+  cursor: pointer; /* 指针光标 */
+}
+
+.purchase-form button:hover {
+  background-color: #45a049; /* 深绿色按钮悬停效果 */
+}
+
+/* 产品列表标题样式 */
+.products-title {
+  font-size: 2em; /* 增大字体大小 */
+  font-weight: bold; /* 字体加粗 */
+  color: #fff; /* 选择白色字体 */
+  background-color: rgba(0, 0, 0, 0.6); /* 在文字后添加深色半透明背景 */
+  padding: 10px; /* 增加一些内边距 */
+  border-radius: 10px; /* 圆角边框 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* 轻微阴影效果 */
+  margin-bottom: 20px; /* 增加与产品列表的间隔 */
+  width: fit-content; /* 宽度根据内容调整 */
+  margin-left: auto; /* 水平居中 */
+  margin-right: auto; /* 水平居中 */
+}
+
+/* 产品信息卡片样式 */
+.product-card {
+  background-color: rgba(255, 255, 255, 0.8); /* 将不透明度降低到0.5 */
+  border: 1px solid #ddd; /* 浅灰色边框 */
+  border-radius: 8px; /* 圆角边框 */
+  padding: 15px; /* 内边距 */
+  margin: 10px auto; /* 上下外边距，自动左右边距以居中 */
+  width: 90%; /* 宽度 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 轻微的阴影效果 */
+}
+
+/* 产品信息文字样式 */
+.product-info {
+  font-size: 1em; /* 文字大小 */
+  color: #333; /* 文字颜色 */
+  margin: 5px 0; /* 上下边距 */
+}
+
+/* 将样式应用到 ViewProducts 组件 */
+
+
+/* 查看转账标题样式 */
+.view-transfers-title {
+  font-size: 2em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 输入框和按钮样式 */
+.view-transfers-input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.view-transfers-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-transfers-button:hover {
+  background-color: #45a049;
+}
+
+/* 转账记录列表样式 */
+.view-transfers-list {
+  list-style-type: none;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.view-transfers-list li {
+  padding: 10px;
+  margin: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.view-transfers-list li:last-child {
+  border-bottom: none;
+}
