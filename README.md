@@ -100,7 +100,7 @@
     npm install react-router-dom
 
 # 启动
-  # 1.先启动你的Ganache，然后在你的add project中加入你项目的文件
+  # 1.先启动你的Ganache，然后在你的add project中加入你项目的truffle-config.js配置文件
   # 2.在你的前端目录使用
     npm start
 
