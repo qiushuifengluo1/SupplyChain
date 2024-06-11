@@ -1,4 +1,4 @@
-# SupplyChain
+# SupplyChain（设计中）
 # 本小型系统于Ubuntu上开发。
 # 安装环境
   # 1.安装 Docker Engine
